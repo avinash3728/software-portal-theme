@@ -1,0 +1,97 @@
+  /*Widget Tab */
+  .nav-pills {
+    padding-bottom: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+
+      &.nav-wizard {
+          > li {
+              position: relative;
+              overflow: visible;
+              border-right: 15px solid transparent;
+              border-left: 15px solid transparent;
+              width: 20%;
+              a{
+                padding: 10px 15px;
+                font-size: 1.4rem;
+                margin: 0px;
+                color: $color-white;
+                border-radius: 0;
+                background-color: $tab-wizard-color;
+              }
+              + li {
+                  margin-left: 0;
+              }
+            
+              &:first-child {
+                  border-left: 0;
+   
+                  a {
+                      border-radius:5px 0 0 5px;
+                  }
+              }
+   
+              &:last-child {
+                  border-right: 0;
+   
+                  a {
+                      border-radius:0 5px 5px 0;
+                  }
+              }
+   
+              .nav-arrow {
+                  position: absolute;
+                  top: 0px;
+                  right: -20px;
+                  width: 0px;
+                  height: 0px;
+                  border-style: solid;
+                  border-width: 20px 0 20px 20px;
+                  border-color: transparent transparent transparent $tab-wizard-color;
+                  z-index: 150;
+              }
+   
+              .nav-wedge {
+                  position: absolute;
+                  top: 0px;
+                  left: -20px;
+                  width: 0px;
+                  height: 0px;
+                  border-style: solid;
+                  border-width: 19px 0 20px 20px;
+                  border-color: $tab-wizard-color $tab-wizard-color $tab-wizard-color transparent;
+                  z-index: 150;
+              }
+   
+              &:hover {
+                  .nav-arrow {
+                      border-color: transparent transparent transparent $tab-wizard-color;
+                  }
+   
+                  .nav-wedge {
+                      border-color: $tab-wizard-color $tab-wizard-color $tab-wizard-color transparent;
+                  }
+   
+                  a {
+                      background-color: $tab-wizard-color;
+                      color: $color-white;
+                  }
+              }
+   
+              &.active {
+                  .nav-arrow {
+                      border-color: transparent transparent transparent $color-blue;
+                  }
+   
+                  .nav-wedge {
+                      border-color: $color-blue $color-blue $color-blue  transparent;
+                  }
+   
+                  a {
+                      background-color: $color-blue;
+                  }
+              }
+          }
+      }
+  }

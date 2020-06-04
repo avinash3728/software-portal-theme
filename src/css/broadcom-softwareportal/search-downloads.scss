@@ -1,0 +1,720 @@
+/* 
+.............this contains download module relates scss
+*/
+
+.module-downloads {
+    .panel {
+        &.panel-default {
+            .panel-heading {
+                color: $color-white;
+            }
+        }
+    }
+
+    .search-product {
+        position: relative;
+        .glyphicon {
+            position: absolute;
+            padding: 10px;
+            pointer-events: none;
+            right: 0;
+        }
+    }
+    .panel-title {
+        color: black;
+    }
+    .panel-group {
+        .panel-heading {
+            padding: 10px 15px;
+        }
+    }
+    .panel-heading {
+        &.panel-red {
+            .panel-title {
+                color: white;
+            }
+        }
+        .panel-title {
+            color: black;
+        }
+    }
+}
+
+.panel {
+    &.panel-default {
+        .panel-heading.panel-red {
+            .panel-title {
+            color: $color-white;
+            }   
+        }
+    }
+}
+
+
+.my-downloads {
+
+    .panel-title {
+        color: black;
+    }
+    .panel-group {
+        .panel-heading {
+            padding: 10px 15px;
+        }
+        .panel-body {
+            padding: 0px;
+        }
+    }
+    .panel-heading {
+        .panel-title {
+            color: black;
+        }
+    }
+    .card-columns {
+        margin: 0 -5px 0 -5px;
+    }
+}
+
+.search-downloads {
+    .search {
+        background-image: url("../images/searchdownloadsbackground.png");
+        background-repeat: no-repeat;
+        color: white;
+        background-size: 100%;
+    }
+    .form-search-downloads {
+        opacity: 1.7;
+        background-color: #f7f3f2;
+        border-radius: 6px;
+        background-image: none;
+        margin-bottom: 31px;
+        color: black;
+        .advanced-search-text.pull-right {
+            left: 31px;
+            position: relative;
+            color: #0694bd;
+            cursor: pointer;
+        }
+    }
+    .advanced-search {
+        opacity: 1.7;
+        background-color: #f7f3f2;
+        border-radius: 6px;
+        background-image: none;
+        margin-bottom: 31px;
+        color: black;
+        .basic-search.pull-right {
+            margin-top: 0px;
+            left: -12px;
+            position: relative;
+            color: #0694bd;
+        }
+        span.glyphicon.glyphicon-menu-up {
+            position: relative;
+            left: -3px;
+            top: 3px;
+        }
+    }
+    button#searchDownloads {
+        top: 31px;
+        position: relative;
+        color: white;
+        left: -12px;
+        background-color: #0092bd;
+    }
+    .table-downloads {
+        table-layout: fixed;
+        th.column-check {
+            width: 25px !important;
+            text-align: center
+        }
+    }
+}
+
+.edit-grid-tools {
+    background-color: #53565a;
+    color: $colorBg-container;
+    .multi-dropdown-container {
+        margin-top: 5px;
+        .multi-dropdown-items {
+            .multi-dropdown-items-data {
+                color: #000;
+            }
+        }
+    }
+    .checkbox {
+        display: inline-block;
+    }
+    .right-section {
+        margin-top: 5px;
+        .mybookmark-dropdown {
+            .form-group {
+                display: inline;
+                .label-wrapper {
+                    display: none;
+                    width: 0;
+                }
+                .input-wrapper {
+                    display: inline-block;
+                    width: 30%;
+                }
+            }
+        }
+        .btn {
+            &.btn-search {
+                background-color: transparent;
+                border: 1px solid #FFFFFF;
+            }
+        }
+    }
+}
+
+h3 {
+    font-size: 27px;
+    color: white;
+}
+
+.search {
+    margin: 20px;
+    background-image: none;
+}
+
+.hidden {
+    display: none;
+}
+
+button.btn.btn-default.dropdown-toggle {
+    border-style: solid;
+    border-color: white;
+}
+
+.datagrid {
+    table {
+        tbody {
+            tr {
+                td {
+                    color: black;
+                }
+                a {
+                    svg {
+                        width: 5%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+///
+p.search-downloads-below-text {
+    font-size: 10px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.8;
+    letter-spacing: normal;
+    text-align: left;
+    color: #595958;
+	    margin-top: 0px;
+}
+
+.advanced-search {
+    padding-left: 16px;
+    padding-top: 11px;
+    padding-right: 13px;
+}
+
+.search-downloads.search {
+    padding-bottom: 1px;
+    padding-right: 40px;
+    padding-left: 40px;
+    margin-left: 0px;
+}
+
+.form-search-downloads {
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 67px;
+}
+
+.advanced-search-filter {
+    padding-right: 50px;
+}
+
+.pad14px {
+ 
+
+    font-size: 26px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.08;
+    letter-spacing: normal;
+    text-align: left;
+    color: #ffffff;
+    margin-bottom: 11px;
+    padding-top: 32px;
+    margin-top: -19px;
+}
+
+.row.edit-grid-tools {
+    padding-bottom: 10px;
+}
+
+.found-documents-text {
+    font-size: 22px;
+}
+
+.padleft75 {
+    float: right;
+    padding-left: 75px;
+}
+
+.showing-numberresult {
+    top: 20px;
+    left: -28px;
+    position: relative;
+    font-size: 12px;
+	    margin-bottom: 40px;
+    margin-top: 11px;
+}
+
+.result.searchdownloads {
+    left: -27px;
+    margin-top: 13px;
+    position: relative;
+    width: 253px;
+    font-size: 16px;
+    line-height: 1.75;
+    letter-spacing: normal;
+    color: #231f20;
+}
+
+ul.legend-searchdownloads {
+    svg {
+        width: 4%;
+    }
+    label {
+        font-size: 11px;
+    }
+}
+
+.font-searchdonwload {
+    font-size: 11px;
+}
+
+.pagination-wrapper .custom-pagination .gird-custom-pagination ul.font-searchdonwload li label {
+    font-size: 11px;
+}
+
+.pagination-wrapper .custom-pagination .gird-custom-pagination ul.font-searchdonwload li button label {
+    font-size: 11px;
+}
+
+.result.searchdownloads>a {
+    position: relative;
+    right: -10px;
+}
+
+.search-downloads-legend {
+    left: -8px;
+}
+
+.filters-searchdownloads {
+    .checkbox {
+        >label {
+            /* it can be used to disable click or any anchor */
+            pointer-events: none;
+            cursor: default;
+            span.cr {
+                pointer-events: auto;
+                cursor: pointer;
+            }
+        }
+        span.cr {
+            left: 12px;
+        }
+    }
+}
+
+span.label-addchecked {
+    float: left;
+    width: 34%;
+    border: none;
+    margin-top: 12px;
+    margin-left: -6px;
+}
+
+span.mybookmark-dropdown {
+    float: left;
+    width: 41%;
+    border: none;
+    margin-top: -16px;
+    padding-right: 6px;
+}
+
+span.bookmark-btn {
+    float: right;
+    width: 27%;
+    border: none;
+    margin-top: 7px;
+}
+
+select#mybookmarks {
+	font-size: 11px;
+    background-color: #53565b;
+    color: white;
+    border-style: solid;
+    border-color: white;
+    border-radius: 3px;
+    -webkit-appearance: none;
+    height: 28px;
+}
+
+.edit-grid-tools-container {
+    background-color: #53565b;
+    color: white;
+    font-size: 11px;
+    margin-bottom: -9px;
+    .dropdown-searchbar {
+        margin-top: 5px;
+        .dropdown.inline.multi-dropdown-container {
+            button.btn.btn-default.dropdown-toggle {
+                border-style: solid;
+                border-color: white;
+                background-color: #53565b;
+                color: white;
+                border-top-width: 1px;
+                border-bottom-width: 1px;
+                border-left-width: 1px;
+                border-right-width: 1px;
+                padding-right: 12px;
+                padding-left: 14px;
+                font-size: 11px;
+            }
+            ul.dropdown-menu {
+                color: black;
+            }
+        }
+    }
+}
+
+.checkbox.searchbarcheckbox {
+    display: inline-block;
+}
+
+select#mybookmarks {
+	font-size: 11px;
+    background-color: #53565b;
+    color: white;
+    border-style: solid;
+    border-color: white;
+    border-radius: 3px;
+    -webkit-appearance: none;
+	height: 28px;
+}
+
+.bookmark {
+    margin-left: 28px;
+}
+
+.filters-searchdownloads {
+    font-size: 11px;
+    margin-top: 3px;
+    margin-left: 55px;
+    width: 285px;
+    .checkbox {
+        >label {
+            /* it can be used to disable click or any anchor */
+            pointer-events: none;
+            cursor: default;
+            span.cr {
+                pointer-events: auto;
+                cursor: pointer;
+            }
+        }
+        span.cr {
+            left: 12px;
+        }
+    }
+}
+
+button.btn.btn-search.searchdownloads {
+    background-color: #53565b;
+    color: white;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    border-left-width: 1px;
+    border-right-width: 1px;
+    border-style: solid;
+    border-color: white;
+    padding: 5px;
+    width: 100%;
+    margin-top: -1px;
+    font-size: 11px;
+}
+
+.dropdown-searchbar {
+    margin-top: 10px;
+}
+
+.datagrid table thead tr th.actions {
+    width: 55px !important;
+}
+
+.datagrid table tbody tr td.actions a svg {
+    width: 13% !important;
+}
+
+/* latest documents */
+
+.latest-doc-module {
+    .latest-doc-box {
+        height: 475px;
+        overflow-y: scroll;
+        border: 1px solid $secondary-gray-light;
+        background: $secondary-gray-light2;
+        .latest-doc-list {
+            padding: 12px 8px 8px 8px;
+            .more-info-link {
+                width: 10%;
+                float: right;
+                margin-top: 15%;
+            }
+            .document-info {
+                width: 70%;
+                float: left;
+            }
+        }
+    }
+}
+
+button#advancedsearchDownloads {
+    width: 80px;
+    margin-top: 20px;
+    padding: 7px;
+    margin-left: 9px;
+    background-color: #0092bc;
+    color: white;
+}
+
+//Alignment Fixes 5-16-2018
+.document-title {
+    float: left;
+    margin-left: 19px;
+    width: 240px;
+    .label-wrapper {
+        margin-bottom: -4px;
+    }
+}
+
+.keyword {
+    float: left;
+    margin-left: 10px;
+    width: 206px;
+    height: 32px;
+    .label-wrapper {
+        margin-bottom: -4px;
+    }
+}
+
+.product {
+    float: left;
+    margin-left: 10px;
+    width: 240px;
+    height: 32px;
+    .label-wrapper {
+        margin-bottom: -4px;
+    }
+}
+
+.number {
+    float: left;
+    margin-left: 10px;
+    width: 227px;
+    .label-wrapper {
+        margin-bottom: -4px;
+    }
+}
+
+.document-type {
+    margin-left: 19px;
+    width: 197px;
+    float: left;
+    .label-wrapper {
+        margin-bottom: -4px;
+    }
+}
+
+.release-date {
+    float: left;
+    width: 125px;
+    margin-left: 10px;
+    .label-wrapper {
+        margin-bottom: -4px;
+    }
+}
+
+.start-date {
+    float: left;
+    margin-left: 10px;
+    margin-top: 5px;
+    width: 141px;
+    .label-wrapper {
+        margin-bottom: -4px;
+    }
+}
+
+.end-date {
+    float: left;
+    margin-left: 10px;
+    width: 142px;
+    margin-top: 5px;
+    .label-wrapper {
+        margin-bottom: -4px;
+    }
+}
+
+.advanced-search {
+    .form-group {
+        margin-bottom: 0px !important;
+    }
+}
+
+.downloads-home
+{
+font-family:gotham;
+.pagination-wrapper .custom-pagination .gird-custom-pagination
+{
+padding-top: 32px;
+}
+}
+td.column-check
+{
+ .checkbox {
+        >label {
+            /* it can be used to disable click or any anchor */
+            pointer-events: none;
+            cursor: default;
+            span.cr {
+                pointer-events: auto;
+                cursor: pointer;
+            }
+        }
+        span.cr {
+            left: 7px;
+        }
+    }
+}
+/* Popup Styling */
+
+.popup-header {
+    font-size: 18px;
+    margin: 5px 0px;
+    color: #cc0033;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.textLeft h3{
+              font-weight: bold;
+}
+
+.Utxt2 b{
+     font-size: 12px;
+}
+
+table.TNCtaglib-search-iterator {
+    font-size: 12px;
+}
+
+.submitbtns {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.redButton1, input[type=submit].redButton1 {
+    background: #cc092f;
+    border: solid 1px #9C0707;
+    background: -webkit-gradient(linear, left top, left bottom, from(#cc092f), to(#d20202));
+    background: -moz-linear-gradient(top, #cc092f, #d20202);
+    background: -ms-linear-gradient(top, #cc092f, #d20202);
+    background-image: linear-gradient(to bottom, #cc092f, #d20202);
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#cc092f, endColorstr=#d20202);
+    font: 12px Arial, Helvetica, sans-serif;
+    border-radius: 4px !important;
+    padding: 5px 10px;
+    font-weight: bold;
+    color: #ffffff;
+    text-shadow: none;
+    margin-right: 10px;
+}
+
+.grayButton, .ndadocumentContainer .grayButton {
+    border: solid 1px #cccccc;
+    background: #969696;
+    background: -webkit-gradient(linear, left top, left bottom, from(#F7F5F6), to(#DDDDDD));
+    background: -moz-linear-gradient(top, #f4f5f5, #dfdddd);
+    background: -ms-linear-gradient(top, #f4f5f5, #dfdddd);
+    background-image: linear-gradient(to bottom, #f4f5f5, #dfdddd);
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#f4f5f5, endColorstr=#dfdddd);
+    font: 12px Arial, Helvetica, sans-serif;
+    border-radius: 4px !important;
+    padding: 5px 10px;
+    font-weight: bold;
+    text-shadow: none;
+    color: #444444;
+}
+
+
+.icn_red_arrow {
+    height: 16px;
+    width: 20px;
+    display: inline-block;
+    margin: 0;
+    overflow: hidden;
+    background: url(../images/custom/right-arrow.png) no-repeat;
+    cursor: pointer;
+    border: none;
+}
+
+.icn_print{
+height: 15px;
+    width: 16px;
+    display: inline-block;
+    margin: 0 3px;
+    overflow: hidden;
+    background: url(../images/custom/print.png);
+    cursor: pointer;
+    border: none;
+}
+
+.broadcom-logo {
+    background: url(../images/custom/logo.png);
+    width: 185px;
+    min-height: 25px;
+    height: auto;
+    background-size: cover;
+}
+
+span.multi-dropdown-items-data
+{
+font-size:12px;
+}
+div#myModalTest
+{
+top: 20px;
+	.modal-content
+	{
+	height: 500px;
+    overflow-y: hidden;
+	.modal-body
+	{
+	iframe#preview
+	{
+	width: 559px;
+    height: 340px;
+	}
+	}
+	}
+	
+}

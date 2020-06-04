@@ -1,0 +1,38 @@
+/* These inject tags are used for dynamically creating imports for themelet styles, you can place them where ever you like in this file. */
+
+/* inject:imports */
+
+@import 'liferay-font-awesome/scss/font-awesome';
+@import 'liferay-font-awesome/scss/glyphicons';
+
+/* endinject */
+
+/* This file allows you to override default styles in one central location for easier upgrade and maintenance. */
+
+@import "broadcom-softwareportal/mixins.scss";
+@import "broadcom-softwareportal/responsive_mixins.scss";
+@import "broadcom-softwareportal/vars.scss";
+@import "broadcom-softwareportal/common.scss";
+@import "broadcom-softwareportal/base.scss";
+@import "broadcom-softwareportal/fonts.scss";
+@import "broadcom-softwareportal/utils.scss";
+@import "broadcom-softwareportal/components/divisions.scss";
+@import "broadcom-softwareportal/components/header.scss";
+@import "broadcom-softwareportal/components/sections.scss";
+@import "broadcom-softwareportal/components/footer.scss";
+@import "broadcom-softwareportal/components/data-grid.scss";
+@import "broadcom-softwareportal/components/pagination.scss";
+@import "broadcom-softwareportal/components/loader.scss";
+@import "broadcom-softwareportal/components/configsalesrep.scss";
+@import "broadcom-softwareportal/components/modal.scss";
+@import "broadcom-softwareportal/components/euv-input.scss";
+@import "broadcom-softwareportal/components/show-more.scss";
+@import "broadcom-softwareportal/accountmanagement.scss";
+@import "broadcom-softwareportal/accountmanagementcreate.scss";
+@import "broadcom-softwareportal/richtext.scss";
+@import "broadcom-softwareportal/fos-license.scss";
+@import "broadcom-softwareportal/navigation-menu.scss";
+@import "broadcom-softwareportal/api-time-tracker.scss";
+@import "broadcom-softwareportal/nav-pill-widget.scss";
+@import "broadcom-softwareportal/tooltip.scss";
+@import "broadcom-softwareportal/components/legend.scss"

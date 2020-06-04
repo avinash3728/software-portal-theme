@@ -1,0 +1,68 @@
+section#portlet_FOSLicMgmt {
+    overflow: hidden;
+}
+
+.red {
+    color: #CC092F;
+}
+
+.border-line {
+    border-bottom: 1px solid #d0d0ce99;
+    margin-bottom: 20px;
+    padding-bottom: 5px;
+}
+
+.btn.btn-red {
+    background-color: #CC092F;
+    color: #FFFFFF;
+}
+.license-data-grid {
+    margin-top: 25px;
+}
+
+.lic-gen-agrmt{
+    display: inherit;
+    position: absolute;
+    margin-top: -35px;
+    margin-left: 25px;
+}
+
+#uniqueID-datagrid{
+	margin-top: 20px;
+}
+
+.btn-border {
+    background: transparent;
+    border: 1px solid #CC092F;
+    color: #CC092F;
+}
+
+.portlet-decorate .portlet-content{
+	overflow: hidden;
+}
+
+.swp-error-container {
+  display: none;
+}
+
+.suppress-default-parsley-error{
+    .parsley-errors-list {
+		display: none;
+	}
+}
+
+.suppress-default-parsley-error {
+    .swp-error-container {
+        display: block;
+	}
+}
+
+#uniqueID-datagrid .checkbox {
+    position: inherit !important;
+}
+
+.feature-list {
+    max-height: 400px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}

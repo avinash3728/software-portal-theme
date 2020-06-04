@@ -1,0 +1,26 @@
+.legend-wrapper {
+    height: 20px;
+    float: right;
+    margin: 10px 10px 10px;
+
+    ul {
+        list-style-type: none;
+        border: 1px solid #d0d0ce99;
+        font-size: 1.2rem;
+        color: #97999b;
+        padding: 5px;
+
+        li {
+            display: inline-block;
+            padding-right: 10px;
+
+            &:last-child {
+                padding-right: 0;
+            }
+
+            i {
+                color: #53565A;
+            }
+        }
+    }
+}

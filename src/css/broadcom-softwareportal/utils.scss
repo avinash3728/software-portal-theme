@@ -1,0 +1,118 @@
+/* ..................Utilit Classes.............*/
+
+.center-block {
+    float: none;
+    margin: 0 auto;
+}
+
+.center-aligned {
+    display: block;
+    margin: 0 auto;
+}
+
+.right-float {
+    h3 {
+        display: inline;
+    }
+}
+
+.border-none {
+    border: none;
+    button {
+        float: right;
+    }
+}
+
+.panel {
+    .panel-red {
+        background: $primary-red;
+    }
+}
+
+a {
+    &.accordion-toggle {
+        color: $colorLink;
+        span {
+            &.glyphicon-plus {
+                float: none;
+                top: 0;
+                left: 0;
+            }
+        }
+    }
+}
+
+.bottom-align {
+    display: table;
+    [class*="col-"] {
+        display: table-cell;
+        float: none;
+    }
+}
+
+.vertical-align-bottom {
+    vertical-align: bottom;
+}
+
+.border {
+    border: 1px solid $secondary-gray;
+}
+
+.border-none {
+    border: none;
+    button {
+        float: right;
+    }
+}
+
+.no-border {
+    border: none;
+}
+
+.no-padding {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.tab-angular {
+    border-radius: 4px;
+    -webkit-transform: perspective(100px) rotateX(20deg);
+    -moz-transform: perspective(100px) rotateX(20deg);
+    margin-right: 8px;
+}
+
+
+/* use this class for hiding the element on page load as "hidden" is already defined in aui.css*/
+
+.visibility-none {
+    display: none;
+}
+
+.inline-element {
+    display: inline-block;
+}
+
+.gray-background {
+    background: $secondary-gray-light2;
+}
+
+.border-full {
+    border: 1px solid $primary-gray;
+}
+
+.border-ligth-gray {
+    border: thin solid $secondary-gray-light;
+}
+
+.text-info {
+    color: $color-link;
+}
+.label-msg {
+    color: $color-blue;
+    font-size: $fontSize-small;
+}
+/* added by manikanta for sgm*/
+.paddOption {
+	padding-top: 5px;
+    padding-bottom: 5px;
+} 

@@ -1,0 +1,130 @@
+#document-types{
+    .img-legend-dimension{
+        width: 10px;
+        height: 25px;
+    }
+    .form-group{
+        margin-bottom: 0px;
+    }
+    .tab-content{
+        border:none;
+    }
+    .button-padding-doc-type {
+        padding: 50px 0px 40px 0px;
+    }
+    .align-right{
+        text-align: right;
+    }
+    #doctype-datagrid{
+         thead tr th:nth-child(3)
+        {   
+            width: 1%;
+        }
+    }
+    .datagrid table tbody tr td:last-child button{
+        padding:1px 3px 1px 3px;
+    }
+    .found-data-font{
+        font-size: 1.5rem;
+    }
+    .found-data-padding{
+        padding-top: 8px;
+        padding-bottom: 8px;
+        padding-left: 0px;
+    }
+    .pagination-wrapper .custom-pagination .grid-label-desc{
+        padding: 8px 10px 6px 10px;
+    }
+    .padding-bottom-breadcrumbs{
+        padding-bottom: 30px;
+    }
+    .red{
+        color: $primary-red;
+    }
+    .padding-left-0px{
+        padding-left:0px;
+    }
+    #doc-type-input{
+        .form-group.inline .label-wrapper{
+            width: 10%;
+        }
+        .form-group.inline .input-wrapper{
+            width: 35%;
+        }
+    }
+}
+#document-audience{
+    .form-group{
+        margin-bottom: 0px;
+    }
+    .button-padding-doc-aud {
+        padding: 50px 0px 40px 0px;
+    }
+    .align-right{
+        text-align: right;
+    }
+    .datagrid table tbody tr td:last-child button{
+        padding:7px 10px 1px 10px;
+    }
+    
+    .padding-4px {
+        padding: 4px;
+    }
+    .padding-top-4px {
+        padding: 4px;
+    }
+    .margin-left-15px {
+        margin-left: 15px;
+    }
+    .margin-left-20px {
+        margin-left: 15px;
+    }
+    .padding-0px{
+        padding:0px;
+    }
+    .padding-right-0px{
+        padding:0px;
+    }
+    .padding-left-0px{
+        padding-left:0px;
+    }
+    .padding-left-0px{
+        padding-left:0px;
+    }
+    .table tr td:first-child, .table tr th:first-child{
+        width:50%;
+    }
+    .found-data-font{
+        font-size: 1.5rem;
+    }
+    .found-data-padding{
+        padding-top: 8px;
+        padding-bottom: 8px;
+        padding-left: 0px;
+    }
+}
+#document-field-approvers{
+    .align-right{
+        text-align: right;
+    }
+    .button-padding-doc-aud {
+        padding: 50px 0px 40px 0px;
+    }
+    .blue-text{
+        color: $color-blue;
+    }
+    .approver-dropdown .form-group .label-wrapper{
+        width: 17%;
+    }
+    .approver-dropdown .form-group .input-wrapper{
+        width: 31%;
+    }
+    #idApproverFields{
+        .label-bold{
+            font-weight: bold;
+        }
+    }
+    .padding-bottom-breadcrumbs{
+        padding-bottom: 30px;
+    }
+}

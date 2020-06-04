@@ -1,0 +1,45 @@
+.euv-input {
+	input {
+		border-width: 0 0 1px 0;
+		border-radius: 0;
+		-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+		box-shadow: inset 0 -0.5px 0px rgba(0,0,0,0.075);
+		
+		&:focus {
+			-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.075), 0 0 8px rgba(102,175,233,0.6);
+			box-shadow: inset 0 -0.5px 0px rgba(0,0,0,0.075), 0 1px 0px rgba(102,175,233,0.6);
+		}
+	}
+	
+	.euv-error {
+		border-color: #cc092f;
+	}
+	
+	.euv-input-error-container {
+		display: flex;
+		align-items: center;
+		
+		.euv-input-remove {
+			flex-grow: 0;
+			margin-right: 10px !important;
+			margin-top: 10px;
+		}
+	}
+	
+	.euv-input-more-info {
+		font-size: 10px;
+		margin-left: 12px;
+		color: #999;
+		border-color: #999;
+		
+		.tooltiptext {
+			width: 400px;
+			left: -10%;
+			
+			&::after {
+				left: 5%
+			}
+		}
+		
+	}
+}

@@ -1,0 +1,236 @@
+.myaccount{
+    .main-heading{
+        p{
+            font-size: 1.2rem;
+        }
+    }
+    .form-group{
+        margin-bottom: 10px;
+        .label-wrapper{
+            margin-bottom: 0px;
+            label{
+                font-size: 1.4rem;
+            }
+        }
+    }
+    .input-wrapper{
+        width:26%;
+        float: left;
+        margin-right: 1%;
+    }
+    .notifi-label{
+        font-size: 1.2rem;
+        color: $color-blue;
+    }
+    .view-catelogue-wrapper{
+        padding:0px;
+        .p-r0{
+            padding-right: 0px;
+        }
+        .p-l0{
+            padding-left: 0px;
+        }
+        .p-t30{
+            padding-top:30px;
+        }
+        .view-catelogue{
+            padding: 10px;
+            border: 1px solid $color-gray80;
+            border-radius: 4px;
+            span{
+                padding-right: 10px;
+            }
+        }
+    }
+    .results-wrapper{
+        padding-top: 20px;
+        span{
+            padding: 0px 5px;
+        }
+    }
+    .pagination-wrapper{
+        .custom-pagination{
+            padding-top: 0px;
+            padding-bottom: 15px;
+        }
+    }
+    .border-bottom{
+        border-bottom: 1px solid $color-gray80;
+        width:97.3%;
+        display: inline-block;
+        height: 100%;
+    }
+    .button-wrapper{
+        padding-top:2.1%;
+        width: 19%;
+        float: left;
+        text-align: right;
+        .btn-search{
+            margin-right: 4%;
+        }
+        .btn-clear{
+            margin-right: 0px;
+        }
+        .btn{
+            padding-right: 20px;
+            padding-left: 20px;
+        }
+    }
+    .request-wrapper{
+        padding-top: 15px;
+        padding-bottom: 15px;
+        .button-wrapper{
+            text-align: left;
+        }
+    }
+    .legend-wrapper{
+        .legend-container{
+            text-align: right;
+            ul{
+                border:1px solid $color-gray80;
+                display: inline-block;
+                padding: 10px;
+                border-radius: 4px;
+                li{
+                    float: left;
+                    list-style-type: none;
+                    padding-right: 15px;
+                    line-height: 35px;
+                    span{
+                        padding-right: 5px;
+                        /*vertical-align: middle;*/
+                    }
+                    .red{
+                        color:$primary-red;
+                    }
+                    .view-catelogue{
+                        border: 0px;
+                        padding: 0px;
+                    }
+                }
+            }
+        }
+    }
+}
+.all-program-activity{
+    margin-bottom: 20px;
+}
+
+.custom-top-margin{
+    margin-top: 20px;
+}
+
+.custom-button{
+    background-color: $color-white;
+    border: solid;
+    border-width: 1px;
+    border-color: $color-gray80;
+    color: $color-gray80;
+}
+
+.custom-label{
+    font-weight: normal;
+}
+.custom-search-button-margin{
+    margin-top: 40px;
+}
+
+.custom-li{
+    border: 1px;
+    border-style: solid;
+    border-color: $color-gray80;
+    padding: 4px;
+    list-style-type: none;
+}
+
+.custom-selector-list{
+    margin: 8px 0px 8px;
+}
+
+.custom-nda-list-li{
+    float: left;
+    list-style-type: none;
+    padding: 10px;
+    margin-top: -39px;
+}
+
+.custom-nda-button{
+    background-color: white;
+    margin-top: 1px;
+}
+
+.btn-clear{
+    background: $color-white;
+    color: $color-blue;
+    border: 1px solid $color-blue;
+}
+
+.custom-disable-mouse-pointer{
+    pointer-events: none;
+}
+
+.mtop31 {
+    margin-top: 31px;
+}
+
+/* UI Fixes for Request Approval */
+
+#manageProgramContainer {
+	.btn.btn-secondary{
+		width: 60px ;
+	}
+	.tree-multiselect .btn.btn-secondary{
+		width: 60px ;
+	}
+	.box-border-blue {
+		border: 1px solid $color-blue;
+	}
+	.panel-heading {
+		padding: 5px 15px;
+	}
+}	
+
+#IdProgramGrid{
+    .table tbody tr td:last-child button{
+        padding: 5px;
+        } 
+}
+
+#ProductAccordian {
+	.accordion {
+		background-color: $color-white;
+		border: 1px solid $color-blue;
+	}
+	.active, .accordion:hover{
+		background-color: $color-white;
+	}
+	.panel {
+		padding: 0 18px;
+		background-color: transparent;
+		overflow: hidden;
+		transition: max-height 0.2s ease-out;
+		border: 1px solid $color-blue;
+		border-top: 0;
+		border-radius: 0;
+		border-top: 0;
+	}
+	.accordion:after {
+		content: '\f107';
+		color: $color-blue;
+		font-weight: bold;
+		float: right;
+		margin-left: 5px;
+		margin-top: -26px;
+		font: bold 18px FontAwesome;
+	}
+	.prod-approved-font {
+		font-size: 12px;
+	}
+}
+
+button.del-icon.btn {
+    background: transparent;
+    color: $color-blue;
+}
+
+

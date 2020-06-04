@@ -1,0 +1,559 @@
+/*.............Basic layout Styles........
+ .................................*/
+
+body {
+    @extend .gotham-l;
+    font-size: $fontSize-body;
+    line-height: $line-height-base;
+    color: $color-text;
+    background-color: $colorBg-container;
+}
+
+#typeahead-container {
+    font: inherit;
+    .typeahead__field input {
+        padding: 6px 12px;
+    }
+    .typeahead__query {
+        z-index: 1;
+    }
+}
+
+.form-group {
+    label {
+        font-weight: normal;
+        &.control-label {
+            &::after {
+                content: "*";
+                color: $primary-red;
+            }
+        }
+    }
+    &.search-box {
+        .input-wrapper {
+            position: relative;
+        }
+    }
+    &.stacked {
+        .input-wrapper {
+            display: block;
+            width: 100%;
+        }
+        .label-wrapper {
+            display: block;
+            width: 100%;
+            .label-msg {
+                color: $color-blue;
+                font-size: $fontSize-small;
+            }
+        }
+    }
+    &.inline {
+        .input-wrapper {
+            display: inline-block;
+            width: 60%;
+            &.hidden-label {
+                width: 100%;
+            }
+            @include media-responsive(handhelds) {
+                width: 100%;
+            }
+            @include media-responsive(handhelds-landscape) {
+                width: 100%;
+            }
+            @include media-responsive(tablet) {
+                width: 100%;
+            }
+            @include media-responsive(tablet-landscape) {
+                width: 100%;
+            }
+        }
+        .label-wrapper {
+            display: inline-block;
+            width: 40%;
+            &.hidden-label {
+                display: none;
+            }
+            @include media-responsive(handhelds) {
+                width: 100%;
+            }
+            @include media-responsive(handhelds-landscape) {
+                width: 100%;
+            }
+            @include media-responsive(tablet) {
+                width: 100%;
+            }
+            @include media-responsive(tablet-landscape) {
+                width: 100%;
+            }
+        }
+    }
+}
+
+.border-bottom-thin {
+    border-bottom: 1px solid $secondary-gray-light;
+    margin-bottom: 24px;
+
+    &.red {
+        border-bottom: 1px solid $secondary-red;
+    }
+}
+
+.border-top-thin {
+    &.grey {
+        border-top: 1px solid gray;
+    }
+    &.red {
+        border-top: 1px solid $secondary-gray-light;
+    }
+}
+
+/* Buttons */
+
+.btn {
+    display: inline-block;
+    margin-bottom: 0; // For input.btn
+    font-weight: $btn-font-weight;
+    text-align: center;
+    vertical-align: middle;
+    touch-action: manipulation;
+    cursor: pointer;
+    background-image: none; // Reset unusual Firefox-on-Android default style; see https://github.com/necolas/normalize.css/issues/214
+    white-space: nowrap;
+    padding-right: 3*$padding-base;
+    padding-left: 3*$padding-base;
+    border-radius: 3px;
+    border: none;
+    margin-right: 4px;
+    &.btn-primary {
+        background-color: $primary-red;
+        border: 1px solid $primary-red;
+        color: $color-white;
+    }
+    &.btn-secondary {
+        background-color: $color-white;
+        border: 1px solid $secondary-gray;
+        color: $secondary-gray;
+    }
+    &.btn-search {
+        background-color: $color-blue;
+        color: $color-white;
+    }
+    &.btn-cancel {
+        background-color: $color-white;
+        border: 1px solid $primary-red;
+        color: $primary-red;
+    }
+}
+
+/* margin and padding */
+
+$spacing: 4px;
+@include maring-and-padding-spacing($spacing);
+.m0-left {
+    @extend %margin-left-0x;
+}
+
+.m0-right {
+    @extend %margin-right-0x;
+}
+
+.margin-4x {
+    @extend %margin-4x;
+}
+.margin-0x {
+    @extend %margin-0x;
+}
+.m1-bottom {
+    @extend %margin-bottom-1x;
+}
+
+.m2-bottom {
+    @extend %margin-bottom-2x;
+}
+
+.m6-bottom {
+    @extend %margin-bottom-6x;
+}
+
+.m8-left {
+    @extend %margin-left-8x;
+}
+
+.m2-top {
+    @extend %margin-top-2x;
+}
+
+.m1-top {
+    @extend %margin-top-1x;
+}
+
+.m6-top {
+    @extend %margin-top-6x;
+}
+
+.m8-top {
+    @extend %margin-top-8x;
+}
+
+.m2-left {
+    @extend %margin-left-2x;
+}
+
+.m1-left {
+    @extend %margin-left-1x;
+}
+
+.m0-left {
+    @extend %margin-left-0x;
+}
+
+.m0-right {
+    @extend %margin-right-0x;
+}
+
+.m4-right {
+    @extend %margin-right-4x;
+}
+
+.m2-right {
+    @extend %margin-right-2x;
+}
+
+.margin-vertical-4x {
+    @extend %margin-vertical-4x;
+}
+
+.margin-horizontal-10x {
+    @extend %margin-horizontal-10x;
+}
+
+.margin-left-3x {
+    @extend %margin-left-3x;
+}
+
+.margin-left-2x {
+    @extend %margin-left-2x;
+}
+
+.margin-left-4x {
+    @extend %margin-left-4x;
+}
+
+.margin-left-5x {
+    @extend %margin-left-5x;
+}
+
+.margin-top-6x {
+    @extend %margin-top-6x;
+}
+
+.margin-top-8x {
+    @extend %margin-top-8x;
+}
+
+.margin-top-3x {
+    @extend %margin-top-6x;
+}
+
+// padding classes
+.p1 {
+    @extend %padding-1x;
+}
+
+.p2 {
+    @extend %padding-2x;
+}
+
+.p2-bottom {
+    @extend %padding-bottom-2x;
+}
+
+.p4-bottom {
+    @extend %padding-bottom-4x;
+}
+
+.padding-4x {
+    @extend %padding-4x;
+}
+
+.padding-6x {
+    @extend %padding-6x;
+}
+
+.padding-3x {
+    @extend %padding-3x;
+}
+
+.padding-left-0x {
+    @extend %padding-left-0x;
+}
+
+.padding-right-0x {
+    @extend %padding-right-0x;
+}
+
+.padding-left-4x {
+    @extend %padding-left-4x;
+}
+
+.padding-left-11x {
+    @extend %padding-left-11x;
+}
+
+.padding-left-3x {
+    @extend %padding-left-3x;
+}
+
+.padding-left-7x {
+    @extend %padding-left-7x;
+}
+
+.padding-left-8x {
+    @extend %padding-left-8x;
+}
+
+.padding-right-2x {
+    @extend %padding-right-2x;
+}
+
+.padding-vertical-4x {
+    @extend %padding-vertical-4x;
+}
+
+.padding-horizontal-10x {
+    @extend %padding-horizontal-10x;
+}
+.p1-top {
+    @extend %padding-top-1x;
+}
+
+.padding-top-3x {
+    @extend %padding-top-3x;
+}
+
+.padding-top-6x {
+    @extend %padding-top-6x;
+}
+
+.padding-top-7x {
+    @extend %padding-top-7x;
+}
+
+.padding-top-8x {
+    @extend %padding-top-8x;
+}
+
+.padding-bottom-3x {
+    @extend %padding-bottom-3x;
+}
+
+.padding-bottom-7x {
+    @extend %padding-bottom-7x;
+}
+
+.padding-right-3x {
+    @extend %padding-right-3x;
+}
+
+.padding-right-1x {
+    @extend %padding-right-1x;
+}
+
+.padding-right-4x {
+    @extend %padding-right-4x;
+}
+
+.padding-right-5x {
+    @extend %padding-right-5x;
+}
+
+.padding-right-6x {
+    @extend %padding-right-6x;
+}
+
+.padding-right-7x {
+    @extend %padding-right-7x;
+}
+
+/* Headings */
+
+h1,
+.h1 {
+    font-size: $fontSize-h1;
+    &.red {
+        color: $primary-red;
+    }
+}
+
+h2,
+.h2 {
+    font-size: $fontSize-h2;
+    &.red {
+        color: $primary-red;
+    }
+    &.display-inline {
+        display: inline;
+    }
+}
+
+h3,
+.h3 {
+    font-size: $fontSize-h3;
+    margin: 20px 0px 20px 0px;
+    &.red {
+        color: $primary-red;
+    }
+    &.black {
+        color: $primary-black;
+    }
+}
+
+p {
+    font-size: $fontSize-body;
+    &.black {
+        color: $primary-black;
+    }
+}
+
+/* links */
+
+a {
+    &:link {
+        color: $color-link;
+    }
+    &:hover,
+    &:focus,
+    &:active {
+        color: $color-link;
+        border-color: transparent;
+    }
+}
+
+/* Form Styles */
+
+input,
+select,
+button,
+textarea {
+    &.form-control {
+        border-radius: $input-border-radius;
+    }
+    &.parsley-error {
+        border: 1px solid $secondary-red;
+    }
+}
+
+/* data-list config */
+
+dl {
+    width: 100%;
+    overflow: hidden;
+    dt {
+        float: left;
+        width: 40%;
+        margin: 0px;
+        padding: 0 5px;
+        box-sizing: border-box;
+        color: $primary-black;
+    }
+    dd {
+        float: left;
+        width: 60%;
+        margin: 0px;
+        padding: 0 5px;
+        box-sizing: border-box;
+    }
+}
+
+/* Text color stylings */
+
+.text-gray {
+    color: $secondary-gray;
+}
+
+.text-red {
+    color: $primary-red;
+}
+
+.text-small {
+    font-size: $fontSize-small;
+}
+
+ul.nav.nav-tabs.navbar-right {
+    border-radius: 4px;
+    -webkit-transform: perspective(100px) rotateX(30deg);
+    -moz-transform: perspective(100px) rotateX(30deg);
+    margin-right: 8px;
+}
+
+/* portlet css overwritten for hiding portlet name and border*/
+
+.portlet-content {
+    .portlet-title-text {
+        display: none !important;
+    }
+}
+.accordion-heading > p:after {
+    float: right !important;
+    font-family: Glyphicons Halflings;
+    content: "\2212";
+    padding-right: 5px;
+}
+.accordion-heading > p.collapsed:after {
+    float: right !important;
+    content: "\2b";
+}
+.accordion-heading{
+    border-bottom: 1px solid $secondary-gray-light;
+    padding: 8px;
+}
+.accordion{
+    .panel{
+        .panel-body{
+            padding: 15px 5px;
+            border-color: $color-blue;
+        }
+    }
+}
+
+.query-description {
+    font-size: $fontSize-small;
+    padding-top: 4px;
+
+    p {
+        font-size: $fontSize-small;
+    }
+
+    ul {
+        columns: 2;
+        -webkit-columns: 2;
+        -moz-columns: 2;
+    }
+}
+
+// Sign In 
+
+a#sign-in {
+    float: right;
+    padding-top: 7px;
+    color: $primary-gray;
+    text-transform: uppercase;
+}
+
+
+.poly-display-old-browser {
+	display: none;
+}
+
+.ie11 {
+    .poly-display-old-browser {
+        display: block;
+    }
+}
+
+.safari {
+    .poly-display-old-browser {
+        display: block;
+    }
+}

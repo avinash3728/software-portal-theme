@@ -1,0 +1,36 @@
+/*multiselect tree style*/
+.tree-multiselect{
+    .panel-heading{
+        background:#CC092F;
+        color: $color-white;
+        p{
+            margin: 6px 0 6px;
+        }
+}
+.panel-body{
+    padding: 5px;
+    border: 1px solid $secondary-gray;
+    border-top: none;
+    #lstBox2{
+        width: 100%;
+        border:none;
+        overflow-y: auto;
+        option{
+            padding: 4px;
+        }
+    }
+    ul{
+        overflow: auto;
+        height: 300px;
+        width: 100%;
+        object-fit: cover;
+    }
+    .move-all{
+        padding: 4px 10px 4px 10px;
+    }
+    .move-prod{
+        padding: 4px 14px 4px 14px;
+    }
+}
+
+}

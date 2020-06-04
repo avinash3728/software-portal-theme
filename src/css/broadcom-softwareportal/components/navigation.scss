@@ -1,0 +1,75 @@
+header{
+.dropdown{
+	.mega-menu{
+	left:10%;
+        align-items:normal;
+		width:auto;
+		display:none;
+		.display-mandatory{
+			display:block;
+		}
+		li.mega-menu-column{
+			width: 100%;
+			ul{
+                width:100%;
+                align-items:normal;
+                display: block;
+				li{
+                    font-weight: normal;
+					font-size:1.2rem;
+					float:left;
+					width: auto;
+					display: block;
+					list-style-type: none;
+					padding-bottom:5px;
+					
+					a{
+						word-break:normal;
+						font-weight:normal;
+						font-family: $fontFamily-Gotham;
+						font-size:1.2rem;
+						text-transform: uppercase;
+						cursor: pointer;
+						line-height: 20px;
+					}
+                }
+                li.nav-header{
+                    font-weight: bold;
+					font-size:1.2rem;
+					padding-bottom:10px;
+					width:150% !important;
+					font-family: $fontFamily-Gotham;
+                }
+			}
+		}
+	}
+}
+	ul.navbar-right{		
+		li:nth-child(3){
+			a{
+				padding-top: 4px;
+				width:19px;
+			}
+		}
+		li:nth-child(4){
+			a{
+				padding-top: 4px;
+			}
+		}
+	}
+}
+
+.hide-mandatory{
+	display:none !important;
+}
+.display-mandatory{
+	display:flex !important;
+}
+.glyphicon-triangle-top{
+	display:none;
+}
+#portlet_Broadcom_Navigation{
+	.portlet-content{
+		padding:0px;
+	}
+}
